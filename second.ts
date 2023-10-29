@@ -1,1 +1,0 @@
-let f_name : string = 'Himanshu';
