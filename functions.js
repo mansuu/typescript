@@ -34,3 +34,13 @@ const mult = function (num1, num2, ...num3) {
     });
 };
 console.log("Multiply function with rest parametrs", mult(2, 3, ...[4, 5, 6]));
+/**
+ * Generic function
+ */
+function concatArrayItems(array) {
+    return new Array().concat(array);
+}
+const concatNumbers = concatArrayItems([1, 2, 3, 4, 5]);
+console.log("Concatenated numbers", concatNumbers);
+const concatString = concatArrayItems(["a", "b", "c"]);
+console.log("Concatenated string", concatString);

@@ -39,3 +39,19 @@ const mult = function(num1:number, num2 : number, ...num3 : number[]) : number {
 }
 
 console.log("Multiply function with rest parametrs", mult(2, 3, ...[4, 5, 6]))
+
+/**
+ * Generic function
+ */
+
+function concatArrayItems<T>(array : Array<T>) : T[]{
+    return new Array<T>().concat(array)
+}
+
+const concatNumbers = concatArrayItems<number>([1, 2, 3, 4, 5])
+
+console.log("Concatenated numbers", concatNumbers)
+
+const concatString = concatArrayItems<string>(["a", "b", "c"])
+
+console.log("Concatenated string", concatString)
